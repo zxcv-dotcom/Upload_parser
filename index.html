@@ -1,9 +1,19 @@
 <!DOCTYPE html>
 <html>
-<head> AI BOT
+<head> AI BOT for parsing documents I have fed it
 </head>
 
-  <body> Here's the AI bot in the little dialog box on the bottom right of the page. Click on it to ask it questions!
+  <body> The AI bot is in the little dialog box on the bottom right of the page. Click on it to ask it questions about the two documents I have currently loaded:
+    1. My analysis of the properly adjusted monetary values in Anarchy by William Dalrymple.
+    2. National Bureau of Economic Research paper on the effect of management science on US productivity in WW2.
+
+    <script type="module">
+    import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
+    Chatbot.init({
+        chatflowid: "8c91465f-7864-4a65-b39d-c906728d9707",
+        apiHost: "https://flowise1-rtm3.onrender.com",
+    })
+</script>
    
   </body>
 </html>
